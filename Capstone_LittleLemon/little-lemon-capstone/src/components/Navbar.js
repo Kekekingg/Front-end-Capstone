@@ -12,7 +12,7 @@ function Nav() {
     return (
         <nav className={`nav-container ${menuOpen ? "open" : ""}`}>
             <div className='nav-list'>
-                <a href="/#" className="nav-logo">
+                <a href="/" className="nav-logo">
                     <img 
                     src={logoSrc} 
                     alt="Little Lemon Logo" 

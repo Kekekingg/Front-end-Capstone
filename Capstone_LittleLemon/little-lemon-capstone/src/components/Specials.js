@@ -1,7 +1,11 @@
 
 function Specials() {
     return (
-        <p>This weeks Specials</p>
+        <>
+           <h2>This weeks specials</h2>
+           <button>Online Store</button>
+           
+        </>
     )
 }
 

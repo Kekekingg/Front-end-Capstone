@@ -87,8 +87,7 @@ button:hover,
     width: 120px;
     height: auto;
     max-width: 100%;
-    display: block;
-    transition: filter 0.3s, transform 0.3s;
+    transition: filter 0.3s transform 0.3s;
 }
 .logo_LiLemon {
     transition: filter 0.3s, transform 0.3s;
@@ -169,18 +168,39 @@ button:hover,
 .hero-image {
     position: absolute;
     right: 20%;
-    top: 22%;
+    top: 18%;
     width: 25rem;
 }
 .hero-image img {
     width: 100%;
     height: 29rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
+
+form, .comfirm{
+  padding: 10px 13%;
+}
+
+.formField{
+  padding: 50px 20px;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
 }
 
 /* Media Querys */
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     .nav-links a,
     .nav-links a:visited,
     .nav-links a:active {
@@ -192,11 +212,11 @@ button:hover,
     .nav-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 1rem;
         position: relative;
     }
     .logo_LiLemon {
-        width: 100px;
         margin-bottom: 2rem;
         margin-left: auto;
         margin-right: auto;
@@ -205,6 +225,8 @@ button:hover,
     .nav-list {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 2rem;
         width: 100%;
     }
     .nav-links {
@@ -223,25 +245,39 @@ button:hover,
         flex-direction: column;
         cursor: pointer;
         top: 1rem;
-        right: 3rem;
+        right: 4rem;
         z-index: 1000;
         position: absolute;
     }
     .hero-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 1rem;
-        gap: 2rem;
+        padding: 2rem 12rem 2rem 0;
     }
     .hero-text {
-        text-align: center;
-        margin: 0 auto;
+        margin: 0 auto; 
     }
     .hero-image {
-        justify-content: center;
-        max-width: 85%;
-        max-height: 90%;
-        display: none;
+        position: static;
+        width: 80%;
+        margin: 2rem auto 0 auto;
+        padding-left: 10rem;
     }
     
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 20%;
+    }
+    .hero-text {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    .hero-image {
+        position: static;
+        width: 80%;
+        margin: 2rem auto 0 auto;
+    }
 }
