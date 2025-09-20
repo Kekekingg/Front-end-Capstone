@@ -25,16 +25,17 @@ function Main() {
                 result.push(i + ":30");
             }
         }
+        return result;
     }
 
     const submitAPI = function(formData) {
         return true;
     }
-    const initialState = {availableTimes: fetchAPI(new Date())};
+    const initialState = {availableTimes: fetchAPI(new Date())}; // Initialize with available times for the current date
     const [state, dispatch] = useReducer(updateTimes, initialState);
 
     function updateTimes(state, date) {
-        return {availableTimes: fetchAPI(new Date(date))};
+        return {availableTimes: fetchAPI(new Date(date))}; // Update the available times based on the selected date
     }
 
     const navigate = useNavigate();

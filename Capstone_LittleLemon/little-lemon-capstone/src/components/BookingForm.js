@@ -1,14 +1,23 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function BookingForm(props) {
-    const [date, setDate] = React.useState("");
-    const [times, setTimes] = React.useState("");
-    const [guests, setGuests] = React.useState("");
-    const [occasion, setOccasion] = React.useState("");
+    const [date, setDate] = useState("");
+    const [times, setTimes] = useState("");
+    const [guests, setGuests] = useState("");
+    const [occasion, setOccasion] = useState("");
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (date && props.fetchTimes) {
+            props.fetchTimes(date);
+        }
+    }, [date, props]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.SubmitForm(e);
+        props.SubmitForm({ date, times, guests, occasion });
+        navigate('/confirmed'); 
     }
 
     const handleChange = (e) => {
@@ -16,7 +25,7 @@ function BookingForm(props) {
         props.dispatch(e);
     }
 
-    const timesArray = props.availableTimes || [];
+    // const timesArray = props.availableTimes || [];
 
     return (
         <header>
@@ -28,12 +37,12 @@ function BookingForm(props) {
                         <div>
                             <label htmlFor="book-date">Choose date</label>
                             <input 
+                            id="book-date" 
                             type="date" 
                             required
-                            id="book-date" 
                             name="book-date" 
                             value={date}
-                            onChange={(e) => handleChange(e.target.value)}/>
+                            onChange={e => handleChange(e.target.value)}/>
                         </div>
 
                         {/* Time */}
@@ -41,15 +50,16 @@ function BookingForm(props) {
                             <label htmlFor="book-time">Choose time:</label>
                             <select 
                                 id="book-time" 
+                                required
                                 value={times} 
                                 onChange={(e) => setTimes(e.target.value)}>
                             <option value="">Select a time</option>
                             {
-                                timesArray.length > 0 ? (timesArray.map((time) => (<option key={time}>{time}</option>))
-                                ) : (
-                                <option disabled>No times available</option>)
+                            props.availableTimes.availableTimes.length > 0 ? (props.availableTimes.availableTimes.map(time => (<option key={time} value={time}>{time}</option>))
+                            ) : (
+                            <option disabled>No times available</option>
+                            )
                             }
-
                             </select>
                         </div>
                 
@@ -62,6 +72,7 @@ function BookingForm(props) {
                             value={guests} 
                             max='10'
                             type='number'
+                            required
                             onChange={(e) => setGuests(e.target.value)}/>
                         </div>
 
@@ -72,6 +83,7 @@ function BookingForm(props) {
                                 id="book-occasion" 
                                 key={occasion}
                                 value={occasion} 
+                                required
                                 onChange={(e) => setOccasion(e.target.value)}>
                                 <option>Birthday</option>
                                 <option>Anniversary</option>
@@ -79,7 +91,7 @@ function BookingForm(props) {
                         </div>
 
                         {/* Submit button */}
-                        <button className='btn' type='submit'> Make your reservation </button>
+                        <button className='btn' type='submit' aria-label='Book your Reservation'> Make your reservation </button>
                     </fieldset>
                 </form>
             </section>
