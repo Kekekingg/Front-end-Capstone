@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function BookingForm(props) {
     const [date, setDate] = useState("");
@@ -69,8 +69,8 @@ function BookingForm(props) {
                             <input 
                             id='book-guests' 
                             min='1' 
-                            value={guests} 
                             max='10'
+                            value={guests} 
                             type='number'
                             required
                             onChange={(e) => setGuests(e.target.value)}/>
@@ -85,13 +85,14 @@ function BookingForm(props) {
                                 value={occasion} 
                                 required
                                 onChange={(e) => setOccasion(e.target.value)}>
+                                <option value="" disabled selected hidden>Choose your occasion</option>
                                 <option>Birthday</option>
                                 <option>Anniversary</option>
                             </select>
                         </div>
 
                         {/* Submit button */}
-                        <button className='btn' type='submit' aria-label='Book your Reservation'> Make your reservation </button>
+                        <button className={`btn ${(!date || !times || !guests || !occasion) ? 'btn-disabled' : ''}`} type='submit' aria-label='Book your Reservation' disabled={!date || !times || !guests || !occasion}> Make your reservation </button>
                     </fieldset>
                 </form>
             </section>

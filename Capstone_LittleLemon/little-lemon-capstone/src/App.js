@@ -10,6 +10,7 @@ function App() {
     <div className="App"> 
         <Nav />
         <Main/>
+        <Specials/>
     </div>
  )
 }

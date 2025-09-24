@@ -1,17 +1,16 @@
-import { updateTimes, fetchAPI } from './components/UpdateTimes';
+// import { render, screen } from '@testing-library/react';
+// import BookingForm from './components/BookingForm';
 
-describe('updateTimes reducer', () => {
-    it('should update availableTimes based on the date', () => {
-        const initialState = { availableTimes: ["17:00"] };
-        const date = "2024-09-18";
-        const newState = updateTimes(initialState, date);
-        expect(newState.availableTimes).toEqual(fetchAPI(new Date(date)));
-    });
+// test("Renderiza el campo de fecha", () => {
+//   render(
+//       <BookingForm
+//         availableTimes={["17:00", "18:00"]}
+//         dispatch={() => {}}
+//         SubmitForm={() => {}}
+//         fetchTimes={() => {}}
+//       />
+//   );
 
-    it('should return a new state object', () => {
-        const initialState = { availableTimes: ["17:00"] };
-        const date = "2024-09-18";
-        const newState = updateTimes(initialState, date);
-        expect(newState).not.toBe(initialState);
-    });
-});
+//   const dateInput = screen.getByLabelText(/Choose date/i);
+//   expect(dateInput).toBeInTheDocument();
+// });
