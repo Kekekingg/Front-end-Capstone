@@ -1,6 +1,5 @@
 import Nav from './components/Navbar';
 import Main from './components/Main';
-import Specials from './components/Specials';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import './App.css';
@@ -10,7 +9,8 @@ function App() {
     <div className="App"> 
         <Nav />
         <Main/>
-        <Specials/>
+        <Testimonials/>
+        <Footer/>
     </div>
  )
 }

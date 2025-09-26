@@ -3,8 +3,10 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Booking from "./Booking";
 import ConfirmedBooking from "./ConfirmedBooking";
+import Specials from "./Specials";
 
 function Main() {
+
 
     const seedRandom = function(seed) {
         var m = 2**35 - 31;
@@ -50,10 +52,13 @@ function Main() {
         <>
             <main>
                 <Routes>
-                    <Route path="/" element={<Header/>}/>
-                    <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>
-                    <Route path="/" element={<Header/>}/>
-                    <Route path="/confirmed" element={<ConfirmedBooking/>}/>
+                    <Route path="/" element={
+                        <>
+                            <Header/>
+                            <Specials/>
+                        </>
+                    }/>
+                    <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>                    <Route path="/confirmed" element={<ConfirmedBooking/>}/>
                 </Routes>
             </main>
         </>

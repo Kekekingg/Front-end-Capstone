@@ -1,6 +1,28 @@
 import recipes from "./Recipes";
+import Swal from "sweetalert2";
 
 function Specials() {
+
+    const hanldeClick = (id) => {
+        console.log("Order a delivery clicked", id);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You will be able to add or remove this dish later.",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, order it!"
+            }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: "Ordered!",
+                text: "Your order has been processing!",
+                icon: "success"
+                });
+            }
+            });
+    }
     return (
         <div className="specials-container">
             <div className="specials-header">
@@ -20,7 +42,7 @@ function Specials() {
                         </div>
                         <div>
                             <p>{recipes.description}</p>
-                            <button className="btn btn-secondary">Order a delivery</button>
+                            <button className="btn btn-secondary" onClick={hanldeClick}>Order a delivery</button>
                         </div>
                     </div>)
                 }
