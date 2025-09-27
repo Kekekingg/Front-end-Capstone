@@ -289,6 +289,39 @@ input, label{
     border-radius: 1rem 1rem 0 0;
 }
 
+/* Testimonials */
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #495E57;
+    padding: 5rem 10.5%;
+    text-align: center;
+}
+.testimonials-section {
+    padding: 1rem 0;
+    background-color: #495E57;
+}
+.testimonials-container h2 {
+    color: #EDEFEE;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+.testimonials-card img {
+    width: 30rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.testimonials-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+
+
 /* Footer */
 footer {
     background-color: #495E57;

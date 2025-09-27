@@ -35,7 +35,7 @@ function Footer() {
                     </ul>
                 </div>
             </section>
-            <p>© 2024 Little Lemon</p>
+            <p>© 2025 Little Lemon</p>
         </footer>
     )
 }
