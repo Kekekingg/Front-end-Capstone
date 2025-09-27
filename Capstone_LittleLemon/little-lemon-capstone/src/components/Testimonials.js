@@ -11,6 +11,7 @@ function Testimonials() {
                         {
                             recipes.map(recipes => <div key={recipes.id} className="testimonial-items">
                                 <img src={recipes.image} alt='' />
+                                <div className="divider"></div>
                                 <div className="testimonial-content">
                                     <img src={Profile} alt="Profile" className="profile-pic" />
                                     <p>{recipes.title}</p>

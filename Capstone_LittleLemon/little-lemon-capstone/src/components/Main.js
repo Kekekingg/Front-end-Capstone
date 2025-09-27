@@ -4,6 +4,9 @@ import Header from "./Header";
 import Booking from "./Booking";
 import ConfirmedBooking from "./ConfirmedBooking";
 import Specials from "./Specials";
+import Testimonials from "./Testimonials";
+import AboutLL from "./AboutLL";
+import Footer from "./Footer";
 
 function Main() {
 
@@ -56,6 +59,9 @@ function Main() {
                         <>
                             <Header/>
                             <Specials/>
+                            <Testimonials/>
+                            <AboutLL/>
+                            <Footer/>
                         </>
                     }/>
                     <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>                    <Route path="/confirmed" element={<ConfirmedBooking/>}/>
