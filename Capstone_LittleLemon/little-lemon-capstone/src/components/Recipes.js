@@ -1,9 +1,10 @@
+
 const recipes = [
     { 
       id: 1,
       title: "Greek salad",
       price: 12.99,
-      image: "https://i.ibb.co/68c9bLv/greek-salad.jpg",
+      image: "https://th.bing.com/th/id/R.0220aad136d8071340d0570e077a2025?rik=vHDWfab7IpnDqQ&pid=ImgRaw&r=0",
       description:
         "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style fota cheese, garnished with crunchy garlic and rosemary croutons",
         rating: 4

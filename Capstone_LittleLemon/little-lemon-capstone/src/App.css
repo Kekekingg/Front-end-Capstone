@@ -16,10 +16,7 @@ body {
 }
 
 .nav-container {
-    width: 85%;
-    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 2rem;
 }
 a {
     text-decoration: none;;
@@ -119,6 +116,8 @@ button:disabled,
     justify-content: center;
     align-items: center;
     padding-left: 12rem;
+    max-width: 100%;
+    background-color: #EDEFEE;
 }
 
 .nav-list {
@@ -225,8 +224,9 @@ input, label{
     flex-direction: column;
     padding: 10rem 10.5%;
     gap: 3rem;
-    max-width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
+    background-color: #EDEFEE;
 }
 
 .specials-header {
@@ -358,6 +358,7 @@ input, label{
     gap: 10rem;
     margin: 0 auto; 
     flex-wrap: wrap;
+    background-color: #EDEFEE;
 }
 .about-ll-section {
     flex: 1;
