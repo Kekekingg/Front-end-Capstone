@@ -1,38 +1,38 @@
-Instrucciones:
+Instructions:
 
-Paso 1: Listar los requerimientos del cliente 
+Step 1: List the client's requirements
 
-Esto se convertira en los contenedores que proveeran el esqueleto de en donde va a aparecer el contenido en el wireframe:
+This will become the containers that provide the skeleton of where the content will appear in the wireframe:
 
-	a. Sobre Little Lemon
-	b. Destacados (highlights) y especiales
-	c. Descripciones y fotos de los platillos
+	a. About Little Lemon
+	b. Highlights and specials
+	c. Descriptions and photos of the dishes
 	d. Nav bar
 	e. Footer
-	f. Opiniones y reseñas (testimonials)
+	f. Testimonials and reviews
 
-Paso 2: Crear el frame (marco) y el grid (cuadricula)
+Step 2: Create the frame and the grid
 
-	a.1: Crear un frame de 1440 x 2900
-	b.1: Agrega una cuadrícula de diseño de 12 columnas al marco
+	a.1: Create a 1440 x 2900 frame
+	b.1: Add a 12-column design grid to the frame
 
-	c.1: Construir los bloques de contenido en este order: 
+	c.1: Build the content blocks in this order:
 		1. Nav bar
-		2. Sección Hero (Muestra al restaurante)
-		3. Destacados (highlights) y especiales
-		4. Opinines y reseñas (testimonials)
-		5. Sobre Little Lemon
-		7. Footter
+		2. Hero section (showcases the restaurant)
+		3. Highlights and specials
+		4. Testimonials and reviews
+		5. About Little Lemon
+		7. Footer
 
-	Una vez construidos los bloques de contenido es necesario moverlos hacia 	afuera del marco y hacer que los rectangulos sean mas estrechos para dar 	una guia de donde empezar a poner todo el contenido. 
+	Once the content blocks are built, it's necessary to move them outside the frame and make the rectangles narrower to provide a guide for where to start placing all the content.
 
 
-Paso 3: Diseñar la barra de navegación (Navbar) del bloque de contenido
+Step 3: Design the Navbar of the content block
 
-En la barra de navegación, los elementos que se necesitaran son el logo de Little Lemon y los links hacia las otras paginas del sitio web.
-	
-	a. Para el logo, cree un rectangulo con lineas diagonales formando una X (forma tradicional de denotar un placeholder para una imagen que no esta 	   disponible momentaneamente)
-	b. Los dueños de Little Lemon proporcionaron una lista de páginas necesarias para el sitio web, las cuales son:
+In the navigation bar, the elements needed are the Little Lemon logo and the links to the other pages of the website.
+
+	a. For the logo, create a rectangle with diagonal lines forming an X (the traditional way of denoting a placeholder for an image that is not currently available)
+	b. The owners of Little Lemon provided a list of pages needed for the website, which are:
 		b.1: Home
 		b.2: About
 		b.3: Menu
@@ -40,54 +40,46 @@ En la barra de navegación, los elementos que se necesitaran son el logo de Litt
 		b.5: Order Online
 		b.6: Login
 
-Paso 4: Diseñar la sección Hero del bloque de contenido
+Step 4: Design the Hero section of the content block
 
-	a. El bloque de contenido Hero contiene:
-		a.1: El nombre de Little Lemon
-		a.2: Donde esta localizado
-		a.3: Una descripción breve de que tipo de comida ofrece
-		a.4: Una opción para reservar una mesa
+	a. The Hero content block contains:
+		a.1: The name of Little Lemon
+		a.2: Where it is located
+		a.3: A brief description of what type of food it offers
+		a.4: An option to reserve a table
 
-Paso 5: Diseñar el bloque de contenido destacado
+Step 5: Design the highlights content block
 
-En este bloque los dueños quieren resaltar los especiales semanales de Little Lemon.
+In this block, the owners want to highlight Little Lemon's weekly specials.
 
-	a. Para esta sección se debe de incluir lo siguiente: 
-		a.1: Titulo
-		a.2: Nombre del platillo
-		a.3: Descripción del platillo
-		a.4: Precio
-		a.5: Imagen del platillo
+	a. This section must include the following:
+		a.1: Title
+		a.2: Dish name
+		a.3: Dish description
+		a.4: Price
+		a.5: Image of the dish
 
-	b. Cuando un platillo es clickeado, el usuario es redirigido a otra pantalla donde es una sección resaltada donde se puede scrollear horizontalmente 	para ver mas items.
-	
-	c. Añadir un botón par que el usuario pueda ir a ordenar en la página online.
+	b. When a dish is clicked, the user is redirected to another screen, which is a highlighted section where you can scroll horizontally to see more items.
 
-Paso 6: Diseñar el bloque de opiniones y reseñas (Testimonials)
+	c. Add a button so the user can go order on the online ordering page.
 
-Una vez que los usuarios hayan creado sus perfiles e iniciado sesión, ellos pueden dejar reseñas y rankear sobre 5. Para completar esto: 
+Step 6: Design the testimonials and reviews block
 
-	a. Agregar un background para separarlos del bloque de contenido resaltado.
-	b. Crear placeholders para las reseñas.
+Once users have created their profiles and logged in, they can leave reviews and rate out of 5. To complete this:
 
-Paso 7: Diseñar el bloque de contenido sobre Little Lemon
+	a. Add a background to separate it from the highlights content block.
+	b. Create placeholders for the reviews.
 
-	a. Los dueños de Little Lemon al proveer el escrito para el contenido de esta sección, hay que añadir solo un placeholder para el texto o lorem 		ipsum.
-	
-	b. Para esta parte se necesita tambien imagenes, tambien se deberan de agregar placeholders para las mismas.
+Step 7: Design the About Little Lemon content block
 
-Paso 8: Desiñar el bloque de contenido del navegador de pie de página (Footer)
+	a. The owners of Little Lemon will provide the written content for this section, so only a text placeholder or lorem ipsum needs to be added.
 
-	a. Primero es necesario agregar un fondo(background), seguido del siguiente 	contenido: 
+	b. Images are also needed for this part, so image placeholders should be added as well.
+
+Step 8: Design the footer navigation content block
+
+	a. First, it's necessary to add a background, followed by the following content:
 		a.1: Logo
-		a.2: Navegación del pie de página (Doormat  o links hacia otras 		páginas)
-		a.3: Detalles de contacto
-		a.4: Links a redes sociales
-
-
-
-
-
-
-
-
+		a.2: Footer navigation (Doormat, or links to other pages)
+		a.3: Contact details
+		a.4: Social media links
