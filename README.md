@@ -2,8 +2,6 @@
 
 Little Lemon is a single-page React application built as the final capstone project for the **Meta Front-End Developer** Coursera specialization. It simulates a restaurant's marketing site and table-reservation flow: a landing page with hero header, weekly specials, testimonials and an "About" section, plus a multi-step table booking form with client-side validation and a confirmation screen.
 
-> This README reflects the actual state of the code in the repository as of commit `5fa030c`, based on direct source analysis rather than the original Create React App boilerplate text.
-
 ---
 
 ## Table of Contents
