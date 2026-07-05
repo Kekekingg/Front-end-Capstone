@@ -124,7 +124,7 @@ Booking state (`availableTimes`) is managed at the `Main.js` level with `useRedu
 
 ## Testing
 
-The project is configured for unit testing with Jest, Babel and React Testing Library (see the `4b729fd` and `8955a85` commits). However, at the current `HEAD`, `src/App.test.js` contains only a **commented-out** test for `BookingForm`, so `npm test` currently reports no active tests. See [Known Limitations](#known-limitations) and `docs/TROUBLESHOOTING.md` for details and suggested fixes.
+The project is configured for unit testing with Jest, Babel and React Testing Library. However, at the current `HEAD`, `src/App.test.js` contains only a **commented-out** test for `BookingForm`, so `npm test` currently reports no active tests. See [Known Limitations](#known-limitations) and `docs/TROUBLESHOOTING.md` for details and suggested fixes.
 
 ---
 
