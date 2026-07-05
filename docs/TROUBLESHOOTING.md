@@ -2,11 +2,11 @@
 
 ---
 
-This guide documents issues found during direct source-code review at commit `5fa030c`, along with root causes and suggested fixes. It is organized by severity/area rather than by commit.
+This guide documents issues found during direct source-code, along with root causes and suggested fixes. It is organized by severity/area rather than by commit.
 
 ## 1. Test Suite Is Effectively Empty
 
-**Symptom:** Running `npm test` reports no tests, despite two commits (`4b729fd`, `8955a85`) describing added unit tests for the booking form, Babel/Jest config, and specials cards.
+**Symptom:** Running `npm test` reports no tests, despite two commits describing added unit tests for the booking form, Babel/Jest config, and specials cards.
 
 **Root cause:** `src/App.test.js` contains a single test for `BookingForm`, but the entire test body — including the `import` statements — is commented out:
 ```js
